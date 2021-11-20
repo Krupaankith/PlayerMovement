@@ -61,6 +61,11 @@ public class Movement : MonoBehaviour
             transform.position += Vector3.back * Speed * Time.deltaTime;
         }
 
+        if (Input.GetKey(KeyCode.S) && (Input.GetKey(KeyCode.R)))
+        {
+            transform.position += Vector3.back * Sprint * Time.deltaTime;
+        }
+
         if (Input.GetKey(KeyCode.D))
         {
             transform.position += Vector3.right * Speed * Time.deltaTime;
